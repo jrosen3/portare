@@ -1,8 +1,107 @@
-* {
-	margin: 0px;
-	padding: 0px;
+.c1-b {
+	background-color: lightblue;
+}
+
+.c1-t {
+	color: lightblue;
 }
 
 body {
-	
+	font-family: sans-serif;
+	/*letter-spacing: 1px;*/
 }
+
+h1 {
+	font-size: 200%;
+}
+
+h2 {
+	font-size: 100%;
+}
+
+h3 {
+	font-size: 100%;
+}
+
+#top-box {
+	width: 100%;
+	text-align: center;
+	padding: 5% 0%;
+	background: linear-gradient(
+      rgba(0, 0, 0, 0.75), 
+      rgba(0, 0, 0, 0.75)
+    ),
+	url('../img/giphy.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: white;
+}
+
+#top-box h1 {
+	padding: .5% 0%;
+	font-weight: bolder;
+}
+
+#top-box h2 {
+	font-weight: lighter;
+}
+
+#top-box h2:last-of-type {
+	margin-bottom: 5%;
+}
+
+#top-box a {
+	padding: 1% 5%;
+	border-radius: 10px;
+}
+
+#top-box p {
+	margin-top: 1.5%;
+	font-size: 75%;
+}
+
+#logistics, #restful {
+	float: left;
+	width: 35%;
+	padding: 5% 0%;
+	text-align: center;
+}
+
+#logistics {
+	padding-left: 10%;
+	padding-right: 5%;
+}
+
+#restful {
+	padding-right: 10%;
+	padding-left: 5%;
+}
+
+.icon {
+	width: 10vw;
+	height: 10vw;
+	margin: 5% auto;
+	border-radius: 10px;
+	background-color: lightblue;
+}
+
+#how-it-works {
+	clear: both;
+	width: 100%;
+	padding: 5% 0% 5% 5%; 
+}
+
+.link {
+	text-decoration: none;
+	color: inherit;
+}
+
+
+
+
+
+
+
+
+
