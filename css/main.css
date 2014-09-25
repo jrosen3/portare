@@ -66,16 +66,83 @@ h3 {
 	font-size: 75%;
 }
 
-#tag-line {
+/*#tag-line {
 	width: 100%;
 	padding: 2.5% 0%;
 	text-align: center;
+}*/
+
+.points-row {
+	width: 80vw;
+	height: 15vw;
+	margin: 5vw auto;
 }
 
-.summery {
+.points {
+	width: 20vw;
+	height: inherit;
+	float: left;
+	text-align: center;
+}
+
+#points-row-1 .points:nth-of-type(2) {
+	margin: 0vw 10vw;
+}
+
+#points-row-2 .points:nth-of-type(1) {
+	margin: 0vw 15vw;
+}
+
+.points .icon {
+	width: 7vw;
+	height: 7vw;
+	border-radius: 10px;
+	margin: 0vh auto 2vh auto;
+
+	background-size: 90%;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 3px solid;
+}
+
+#p-log {
+	background-image: url('../img/bike2.png');
+	border-color: lightgreen;
+}
+
+#p-api {
+	background-image: url('../img/gear.png');
+	border-color: crimson;
+}
+
+#p-price {
+	background-image: url('../img/dollarsign.png');
+	border-color: orange;
+}
+
+#p-area {
+	background-image: url('../img/map.png');
+	border-color: yellow;
+}
+
+#p-wheel {
+	background-image: url('../img/wheel.png');
+	border-color: lightpink;
+}
+
+.points h2 {
+	margin-bottom: .5vh;
+}
+
+.points p {
+	font-size: 75%;
+}
+
+
+
+/*.summery {
 	float: left;
 	height: 20vw;
-	/*background-color: pink;*/
 }
 
 #l-icon{
@@ -113,7 +180,7 @@ h3 {
 	background-size: 125% 100%;
 	background-repeat: no-repeat;
 	background-position: left;
-}
+}*/
 
 #how-it-works {
 	clear: both;
