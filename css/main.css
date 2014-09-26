@@ -1,14 +1,8 @@
-.c1-b {
-	background-color: lightblue;
-}
-
-.c1-t {
-	color: lightblue;
-}
-
 body {
 	font-family: sans-serif;
 	/*letter-spacing: 1px;*/
+	background-color: rgba(0, 0, 0, .0125);
+
 }
 
 h1 {
@@ -31,8 +25,8 @@ h3 {
 	text-align: center;
 	padding: 15% 0% 5% 0%;
 	background: linear-gradient(
-      rgba(0, 0, 0, 0.75), 
-      rgba(0, 0, 0, 0.75)
+      rgba(0, 0, 0, 0.65), 
+      rgba(0, 0, 0, 0.65)
     ),
 	url('../img/city-birdeye.gif');
 	background-size: cover;
@@ -58,30 +52,32 @@ h3 {
 	padding: 1% 5%;
 	border: 3px solid lightblue;
 	border-radius: 10px;
-	color: lightblue;
+}
+
+#top-box a:hover {
+	background-color: rgba(0, 0, 0, 0.50);
 }
 
 #top-box p {
 	margin-top: 2%;
-	font-size: 75%;
-}
-
-#tag-line {
-	width: 100%;
-	padding: 2.5% 0% 2.5% 0%;
-	text-align: center;
+	font-size: 80%;
 }
 
 .points-row {
 	width: 80vw;
-	height: 13vw;
+	background-color: pink;
+}
+
+#points-row-1 {
 	margin: 5vw auto;
-	/*background-color: pink;*/
+}
+
+#points-row-2 {
+	margin: 0vw auto;
 }
 
 .points {
 	width: 20vw;
-	height: inherit;
 	float: left;
 	text-align: center;
 }
@@ -91,7 +87,11 @@ h3 {
 }
 
 #points-row-2 .points:nth-of-type(1) {
-	margin: 0vw 15vw;
+	margin: 5vw 15vw;
+}
+
+#points-row-2 .points:nth-of-type(2) {
+	margin: 5vw 0vw;	
 }
 
 .points .icon {
@@ -132,22 +132,111 @@ h3 {
 }
 
 .points h2 {
-	margin-bottom: .5vh;
+	margin-bottom: 1vh;
 }
 
 .points p {
-	font-size: 75%;
+	font-size: 80%;
+	line-height: 125%;
+}
+
+#tag-line {
+	clear: both;
+	width: 100%;
+	padding: 5% 0%;
+	text-align: center;
+	margin-bottom: 5%;
+
+	background-image: url('../img/citygrid-15.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#tag-line p {
+	padding: 0% 20%;
+	font-size: 200%;
+	line-height: 150%;
 }
 
 #how-it-works {
+	width: 80vw;
+	padding: 0% 0% 0% 20%; 
+	margin: 0px auto;
+}
+
+#how-it-works .icon, .line, .text {
+	float: left;
+}
+
+#how-it-works .icon {
+	font-size: 300%;
+	margin-top: -5px;
+}
+
+.text {
+	width: 30vw;
+	padding: 0vw 0vw 5vw 1.5vw;
+	border-left: 3px solid;
+}
+
+.text h2 {
+	margin-bottom: 1vh;
+}
+
+.text p {
+	font-size: 80%;
+	line-height: 125%;
+	color: black;
+}
+
+#w-1, #w-2, #w-3, #w-4 {
 	clear: both;
+	margin-right: 1vw;
+}
+
+#w-1, #w-1-t {
+	color: lightgreen;
+	border-color: lightgreen;
+}
+
+#w-2, #w-2-t {
+	color: crimson;
+	border-color: crimson;
+}
+
+#w-3, #w-3-t {
+	color: orange;
+	border-color: orange;
+}
+
+#w-4, #w-4-t {
+	color: yellow;
+	border-color: yellow;
+	margin-bottom: 5%;
+}
+
+#footer {
 	width: 100%;
-	padding: 5% 0% 5% 0%; 
+	clear: both;
+}
+
+#footer p {
+	padding: 1%;
+	font-size: 80%;
 }
 
 .link {
 	text-decoration: none;
 	color: inherit;
+}
+
+.c1-b {
+	background-color: lightblue;
+}
+
+.c1-t {
+	color: lightblue;
 }
 
 
