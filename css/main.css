@@ -160,60 +160,58 @@ h3 {
 }
 
 #how-it-works {
-	width: 80vw;
-	padding: 0% 0% 0% 20%; 
-	margin: 0px auto;
+	width: 100%;
 }
 
-#how-it-works .icon, .line, .text {
+#code-well {
 	float: left;
+	width: 40vw;
+	margin: 0vw 10vw 5% 10vw;
+	border: 3px solid lightblue;
+	border-radius: 10px;
+
 }
 
-#how-it-works .icon {
-	font-size: 300%;
-	margin-top: -5px;
+#nav-tabs {
+	width: 40vw;
+	font-size: 80%;
 }
 
-.text {
+#nav-tabs li {
+	float: left;
+	min-width: 50px;
+	padding: 1vh 1vw 1vh 1vw;
+
+}
+
+#code {
+	float: left;
+	width: 38vw;
+	height: 40vh;
+	padding: 1vw;
+	overflow: scroll;
+	background-color: white;
+	border-radius: 0px 0px 10px 10px;
+}
+
+pre {
+	border: none !important;
+	font-family: monospace;
+}
+
+#text {
+	float: left;
 	width: 30vw;
-	padding: 0vw 0vw 5vw 1.5vw;
-	border-left: 3px solid;
+	margin-bottom: 5%;
 }
 
-.text h2 {
+#text > h2 {
 	margin-bottom: 1vh;
 }
 
-.text p {
+#text > p {
 	font-size: 80%;
 	line-height: 125%;
-	color: black;
-}
-
-#w-1, #w-2, #w-3, #w-4 {
-	clear: both;
-	margin-right: 1vw;
-}
-
-#w-1, #w-1-t {
-	color: lightgreen;
-	border-color: lightgreen;
-}
-
-#w-2, #w-2-t {
-	color: crimson;
-	border-color: crimson;
-}
-
-#w-3, #w-3-t {
-	color: orange;
-	border-color: orange;
-}
-
-#w-4, #w-4-t {
-	color: yellow;
-	border-color: yellow;
-	margin-bottom: 5%;
 }
 
 #footer {

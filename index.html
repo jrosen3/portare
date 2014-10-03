@@ -7,11 +7,15 @@
     <!-- <link rel="shortcut icon" href="../favicon.ico"> -->
 
     <!-- jquery -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>-->
 
     <!-- js -->
     <script src="js/main.js"></script>
+
+    <!-- code -->
+    <!-- https://code.google.com/p/google-code-prettify/wiki/GettingStarted -->
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?skin=default"></script>
     
     <!-- css -->
     <link rel="stylesheet" href="css/reset.css" />
@@ -35,7 +39,7 @@
       <div class="points">
         <div class="icon" id="p-api"></div>
         <h2>Intuitive RESTful API</h2>
-        <p>Control your entire shipping job via our simple REST API. We built Portare with developers in mind so we offer wrappers in Ruby, Python, and PHP as well as iOS and Android SDKs</p>
+        <p>Control your entire shipping job via our simple REST API. We built Portare with developers in mind so we offer wrappers in Python and PHP as well as iOS and Android SDKs</p>
       </div>
       <div class="points">
         <div class="icon" id="p-price"></div>
@@ -62,28 +66,62 @@
     </div>
 
     <div id="how-it-works">
-      <div class="icon" id="w-1">1</div>
-      <div class="text" id="w-1-t">
-        <h2>Create an Order</h2>
-        <p>Every Portare order is submitted through our API. You tell us the pickup and drop off locations, size and weight of the package, if the delivery is fragile or urgent, and any pickup or drop off instructions our couriers may need to know</p>
-      </div>
+      <div id="code-well" class="c1-b">
+        <ul id="nav-tabs">
+          <li class="tab-nav" ><a class="link" href="#python">Python</a></li>
+          <li class="tab-nav" ><a class="link" href="#php">PHP</a></li>
+          <li class="tab-nav" ><a class="link" href="#swift">Swift</a></li>
+          <li class="tab-nav" ><a class="link" href="#java">Java</a></li>
+        </ul>
+        <div id="code">
+          <pre id="python" class="prettyprint tab-panel active-first">
+import portare
+api_key = 'YOUR_PORTARE_REST_API_KEY'
+portare_client = portare.Client(api_key)
 
-      <div class="icon" id="w-2">2</div>
-      <div class="text" id="w-2-t">
-        <h2>Get a Time and Price Quote</h2>
-        <p>Will instantly respond with estimated pick up and drop off time and price</p>
+portare.Client('transaction', {
+  'from_address' : {
+    'address1' : '17138 Avenida De La Herradura',
+    'address2' : None,
+    'city' : 'New York',
+    'state' : 'NY',
+    'zipcode' : '10003',
+    'country': 'USA'
+  },
+  'to_address' : {
+    'address1' : '405 Winthrop Street',
+    'address2' : None,
+    'city' : 'New York',
+    'state' : 'NY',
+    'zipcode' : '10004',
+    'country': 'USA'
+  },
+  'dimensions' : {
+    'lenght' : 14,
+    'width' : 10,
+    'hight' : 3
+  },
+  'weight' : 104, #6.5 lbs
+  'fragile' : 'No',
+  'urgent' : 1, #0, 1, or 2
+  'pickup_instructions' : 'order #145637',
+  'delivery_instructions' : 'Delivery for Ben from Smiths BBQ'
+})
+          </pre>
+          <pre  id="php" class="prettyprint tab-panel">
+PHP is coming soon
+          </pre>
+          <pre  id="swift" class="prettyprint tab-panel">
+Swift is soming soon
+          </pre>
+          <pre  id="java" class="prettyprint tab-panel">
+Java is coming soon
+          </pre>
+        </div>
       </div>
-
-      <div class="icon" id="w-3">3</div>
-      <div class="text" id="w-3-t">
-        <h2>Confirm the Order</h2>
-        <p>Confirm the order and we will dispatch a courier to pick up the package</p>
-      </div>
-
-      <div class="icon" id="w-4">4</div>
-      <div class="text" id="w-4-t">
-        <h2>Sit Back and Relax</h2>
-        <p>Sit back and relax while your delivery is completed</p>
+      <div id="text">
+        <h2>How it Works</h2>
+        <p>Every Portare order is submitted through our API. You tell us the pickup and drop off locations, size and weight of the package, if the delivery is fragile or urgent, and any pickup or drop off instructions our couriers may need to know. Will instantly respond with estimated pick up and drop off time and price, if you confirm the order, we will dispatch a courier to pick up the package and swiftly deliver it.</p>
       </div>
     </div>
 
