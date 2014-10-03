@@ -25,8 +25,8 @@ h3 {
 	text-align: center;
 	padding: 15% 0% 5% 0%;
 	background: linear-gradient(
-      rgba(0, 0, 0, 0.65), 
-      rgba(0, 0, 0, 0.65)
+      rgba(0, 0, 0, 0.75), 
+      rgba(0, 0, 0, 0.75)
     ),
 	url('../img/city-birdeye.gif');
 	background-size: cover;
@@ -46,17 +46,17 @@ h3 {
 
 #top-box a {
 	padding: 1% 5%;
-	border: 3px solid lightblue;
+	border: 3px solid #E62F17;
 	border-radius: 10px;
 }
 
 #top-box a:hover {
-	background-color: rgba(0, 0, 0, 0.50);
+	background-color: rgba(230, 47, 23, 0.125);
 }
 
 #top-box p {
 	margin-top: 2%;
-	font-size: 80%;
+	font-size: 100%;
 }
 
 .points-row {
@@ -109,7 +109,7 @@ h3 {
 
 #p-api {
 	background-image: url('../img/gear.png');
-	border-color: crimson;
+	border-color: lightblue;
 }
 
 #p-price {
@@ -132,7 +132,7 @@ h3 {
 }
 
 .points p {
-	font-size: 80%;
+	font-size: 100%;
 	line-height: 125%;
 }
 
@@ -163,14 +163,14 @@ h3 {
 	float: left;
 	width: 40vw;
 	margin: 0vw 10vw 5% 10vw;
-	border: 3px solid lightblue;
+	border: 3px solid #E62F17;
 	border-radius: 10px;
 
 }
 
 #nav-tabs {
 	width: 40vw;
-	font-size: 80%;
+	font-size: 100%;
 }
 
 #nav-tabs li {
@@ -182,17 +182,19 @@ h3 {
 
 #code {
 	float: left;
-	width: 38vw;
+	width: 40vw;
 	height: 40vh;
-	padding: 1vw;
+	/*padding: 1vw;*/
 	overflow: scroll;
-	background-color: white;
+	/*background-color: white;*/
+	background-color: #3f3f3f;
 	border-radius: 0px 0px 10px 10px;
 }
 
 pre {
 	border: none !important;
-	font-family: monospace;
+	font-family: monospace !important;
+	background-color: #3f3f3f !important;
 }
 
 #text {
@@ -206,16 +208,44 @@ pre {
 }
 
 #text > p {
-	font-size: 80%;
+	font-size: 100%;
 	line-height: 125%;
-	margin-bottom: 3.5%;
+	margin-bottom: 4.5%;
 }
 
 #text a {
-	font-size: 80%;
-	padding: 1% 5%;
-	border: 3px solid lightblue;
+	font-size: 100%;
+	padding: 2% 5%;
+	border: 3px solid #E62F17;
 	border-radius: 5px;
+}
+
+#text a:hover {
+	background-color: rgba(230, 47, 23, 0.125);
+}
+
+#tag-line-2 {
+	clear: both;
+	width: 100%;
+	padding: 5% 0%;
+	text-align: center;
+}
+
+#tag-line-2 p {
+	padding: 0% 20%;
+	font-size: 200%;
+	line-height: 150%;
+	margin-bottom: 3.5%;
+}
+
+#tag-line-2 a {
+	padding: 1% 5%;
+	border: 3px solid white;
+	border-radius: 10px;
+}
+
+#tag-line-2 a:hover {
+	background-color: rgba(255, 255, 255, 0.125);
 }
 
 
@@ -226,7 +256,7 @@ pre {
 
 #footer p {
 	padding: 1%;
-	font-size: 80%;
+	font-size: 100%;
 }
 
 .link {
@@ -235,14 +265,13 @@ pre {
 }
 
 .c1-b {
-	background-color: lightblue;
+	background-color: #E62F17;
+	color: white;
 }
 
 .c1-t {
-	color: lightblue;
+	color: #E62F17;
 }
-
-
 
 
 
