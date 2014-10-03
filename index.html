@@ -4,11 +4,10 @@
     <title>Portare | Last-Mile-Logistics as a Service</title>
     <meta charset="UTF-8" />
     
-    <!-- <link rel="shortcut icon" href="../favicon.ico"> -->
+    <link rel="icon" type="image/png" href="img/temp_logo.png">
 
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>-->
 
     <!-- js -->
     <script src="js/main.js"></script>
@@ -79,9 +78,9 @@ import portare
 api_key = 'YOUR_PORTARE_REST_API_KEY'
 portare_client = portare.Client(api_key)
 
-portare.Client('transaction', {
+portare_client.Order('pickup', {
   'from_address' : {
-    'address1' : '17138 Avenida De La Herradura',
+    'address1' : '17138 Herradura Drive',
     'address2' : None,
     'city' : 'New York',
     'state' : 'NY',
@@ -122,6 +121,7 @@ Java is coming soon
       <div id="text">
         <h2>How it Works</h2>
         <p>Every Portare order is submitted through our API. You tell us the pickup and drop off locations, size and weight of the package, if the delivery is fragile or urgent, and any pickup or drop off instructions our couriers may need to know. Will instantly respond with estimated pick up and drop off time and price, if you confirm the order, we will dispatch a courier to pick up the package and swiftly deliver it.</p>
+        <a href="https://www.google.com" class="link c1-b">Read Docs</a>
       </div>
     </div>
 
